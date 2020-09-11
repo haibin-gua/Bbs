@@ -1,0 +1,67 @@
+body{
+    background: gray;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a:hover{
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+.layout{
+    background: #ffffff;
+    width:7.5rem;
+    min-height: 100vh;
+    margin:0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form{
+    padding:0 .15rem;
+    overflow: hidden;
+}
+.form h1{
+    font-size: .7rem;
+    color: #fff;
+    text-align: center;
+    margin-top:2rem;
+}
+.form .input{
+    width:100%;
+    height: 1rem;
+    margin-top:.5rem;
+    overflow: hidden;
+    border-radius: .3rem;
+    margin-bottom: .3rem;
+}
+.form .input input{
+    width:100%;
+    height: 100%;
+    border:none;
+    font-size: .4rem;
+    padding-left:.2rem;
+
+}
+.form .submit{
+   float: left;
+}
+.form .submit input[type="submit"]{
+    width:2rem;
+    height:1rem;
+    border: none;
+    background: #3CC48D;
+    font-size: .4rem;
+    border-radius: .2rem;
+    color: #fff;
+}
+.form .signup{
+    float: right;
+    font-size: .34rem;
+    color: #fff;
+    line-height: 1rem;
+}
