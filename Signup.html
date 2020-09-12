@@ -8,21 +8,30 @@
     <title>Bbs</title>
 </head>
 <body>
-    <div class="layout" style="background: url(./images/bg.jpg);">
+    <div id="app" class="layout" style="background: url(./images/bg.jpg);">
         <div class="form">
-            <form method="POST">
+            <form method="POST" id="signupForm">
                 <h1>注册</h1>
                 <div class="input">
-                    <input type="text" placeholder="请输入昵称">
+                    <input type="text" name="name" v-model="Bbs.name" placeholder="请输入昵称">
+                </div>
+                <div class="err">
+                    <label for="name" class="error">{{err}}</label> 
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="请输入用户名">
+                    <input type="text" name="username" v-model="Bbs.username" placeholder="请输入用户名">
+                </div>
+                <div class="err">
+                    <label for="username" class="error">{{err}}</label> 
                 </div>
                 <div class="input">
-                    <input type="password" placeholder="请输入密码">
+                    <input type="password" name="pwd" v-model="Bbs.password" placeholder="请输入密码">
+                </div>
+                <div class="err">
+                    <label for="pwd" class="error">{{err}}</label> 
                 </div>
                 <div class="submit">
-                    <input type="submit" value="注册">
+                    <input type="submit" value="注册" @click="register">
                 </div>
                 <div class="signup"><a href="./Signin.html">已有账号，立即登录</a> </div>
             </form>
@@ -33,6 +42,11 @@
 
 <script src="./js/flexible.min.js"></script>
 <script src="./js/jquery-1.9.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="./js/vaildate.js"></script>
+<script src="./js//message_cn.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./js/js.js"></script>
 </body>
 </html>
